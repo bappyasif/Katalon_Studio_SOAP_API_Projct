@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Data Driven Soap Test,,,2019-04-11 21:08:03,2019-04-11 21:08:11,8.561s,FAILED
+,,,,,,
+Test Cases/Data Driveen Test Case,,,2019-04-11 21:08:03,2019-04-11 21:08:09,6.432s,PASSED
+"println(""Country Code :"" + countryCode)",,,2019-04-11 21:08:04,2019-04-11 21:08:04,0.006s,PASSED
+"println(""Country Capital :"" + countryCapital)",,,2019-04-11 21:08:04,2019-04-11 21:08:04,0.002s,PASSED
+"println(""Country Currency :"" + countryCurrency)",,,2019-04-11 21:08:04,2019-04-11 21:08:04,0.002s,PASSED
+"cptlResponse = sendRequest(findTestObject(""SOAP API Country Info/CapitalCity"", [""CountryCode"":countryCode]))",,,2019-04-11 21:08:04,2019-04-11 21:08:08,4.177s,PASSED
+"verifyElementText(cptlResponse, ""CapitalCityResponse.CapitalCityResult"", countryCapital)",,,2019-04-11 21:08:08,2019-04-11 21:08:08,0.289s,PASSED
+"currResponse = sendRequest(findTestObject(""SOAP API Country Info/CountryCurrency"", [""CountryCode"":countryCode]))",,,2019-04-11 21:08:08,2019-04-11 21:08:09,1.345s,PASSED
+"verifyElementText(currResponse, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", countryCurrency)",,,2019-04-11 21:08:09,2019-04-11 21:08:09,0.039s,PASSED
+,,,,,,
+Test Cases/Data Driveen Test Case,,,2019-04-11 21:08:09,2019-04-11 21:08:11,1.533s,FAILED
+"println(""Country Code :"" + countryCode)",,,2019-04-11 21:08:09,2019-04-11 21:08:09,0.000s,PASSED
+"println(""Country Capital :"" + countryCapital)",,,2019-04-11 21:08:09,2019-04-11 21:08:09,0.000s,PASSED
+"println(""Country Currency :"" + countryCurrency)",,,2019-04-11 21:08:09,2019-04-11 21:08:09,0.000s,PASSED
+"cptlResponse = sendRequest(findTestObject(""SOAP API Country Info/CapitalCity"", [""CountryCode"":countryCode]))",,,2019-04-11 21:08:09,2019-04-11 21:08:11,1.385s,PASSED
+"verifyElementText(cptlResponse, ""CapitalCityResponse.CapitalCityResult"", countryCapital)",,,2019-04-11 21:08:11,2019-04-11 21:08:11,0.123s,FAILED

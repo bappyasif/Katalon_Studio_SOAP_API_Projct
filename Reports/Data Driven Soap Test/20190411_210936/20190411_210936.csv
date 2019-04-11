@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Data Driven Soap Test,,,2019-04-11 21:09:39,2019-04-11 21:09:48,9.640s,PASSED
+,,,,,,
+Test Cases/Data Driveen Test Case,,,2019-04-11 21:09:39,2019-04-11 21:09:45,6.356s,PASSED
+"println(""Country Code :"" + countryCode)",,,2019-04-11 21:09:39,2019-04-11 21:09:39,0.005s,PASSED
+"println(""Country Capital :"" + countryCapital)",,,2019-04-11 21:09:39,2019-04-11 21:09:39,0.000s,PASSED
+"println(""Country Currency :"" + countryCurrency)",,,2019-04-11 21:09:39,2019-04-11 21:09:39,0.005s,PASSED
+"cptlResponse = sendRequest(findTestObject(""SOAP API Country Info/CapitalCity"", [""CountryCode"":countryCode]))",,,2019-04-11 21:09:39,2019-04-11 21:09:43,4.094s,PASSED
+"verifyElementText(cptlResponse, ""CapitalCityResponse.CapitalCityResult"", countryCapital)",,,2019-04-11 21:09:43,2019-04-11 21:09:44,0.286s,PASSED
+"currResponse = sendRequest(findTestObject(""SOAP API Country Info/CountryCurrency"", [""CountryCode"":countryCode]))",,,2019-04-11 21:09:44,2019-04-11 21:09:45,1.391s,PASSED
+"verifyElementText(currResponse, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", countryCurrency)",,,2019-04-11 21:09:45,2019-04-11 21:09:45,0.056s,PASSED
+,,,,,,
+Test Cases/Data Driveen Test Case,,,2019-04-11 21:09:45,2019-04-11 21:09:48,2.910s,PASSED
+"println(""Country Code :"" + countryCode)",,,2019-04-11 21:09:45,2019-04-11 21:09:45,0.000s,PASSED
+"println(""Country Capital :"" + countryCapital)",,,2019-04-11 21:09:45,2019-04-11 21:09:45,0.000s,PASSED
+"println(""Country Currency :"" + countryCurrency)",,,2019-04-11 21:09:45,2019-04-11 21:09:45,0.000s,PASSED
+"cptlResponse = sendRequest(findTestObject(""SOAP API Country Info/CapitalCity"", [""CountryCode"":countryCode]))",,,2019-04-11 21:09:45,2019-04-11 21:09:47,1.376s,PASSED
+"verifyElementText(cptlResponse, ""CapitalCityResponse.CapitalCityResult"", countryCapital)",,,2019-04-11 21:09:47,2019-04-11 21:09:47,0.034s,PASSED
+"currResponse = sendRequest(findTestObject(""SOAP API Country Info/CountryCurrency"", [""CountryCode"":countryCode]))",,,2019-04-11 21:09:47,2019-04-11 21:09:48,1.443s,PASSED
+"verifyElementText(currResponse, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", countryCurrency)",,,2019-04-11 21:09:48,2019-04-11 21:09:48,0.040s,PASSED

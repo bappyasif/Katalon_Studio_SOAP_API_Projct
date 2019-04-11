@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CountryInfoSOAPAPI" time="16" tests="2" failures="0" errors="0">
+   <testsuite name="CountryInfoSOAPAPI" tests="2" failures="0" errors="0" time="16" timestamp="2019-04-10 20:21:12" hostname="BappY - Toruk-Macto" id="Test Suites/CountryInfoSOAPAPI">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\BappY\\Katalon Studio\\Sample SOAP API Testing Project\\Reports\\CountryInfoSOAPAPI\\20190410_202109"/>
+         <property name="logFiles" value="C:\\Users\\BappY\\Katalon Studio\\Sample SOAP API Testing Project\\Reports\\CountryInfoSOAPAPI\\20190410_202109\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="BappY - Toruk-Macto"/>
+         <property name="hostAddress" value="10.244.50.2"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.4.7"/>
+      </properties>
+      <testcase name="Test Cases/Country Names Test Case" classname="Test Cases/Country Names Test Case" status="PASSED">
+         <system-out><![CDATA[2019-04-10 20:21:12 - [TEST_CASE][PASSED] - Test Cases/Country Names Test Case: Test Cases/Country Names Test Case
+
+2019-04-10 20:21:13 - [TEST_STEP][PASSED] - sendRequest(findTestObject("CountryInfoSOAPService/CountryListByNames")): Send request successfully
+
+2019-04-10 20:21:22 - [MESSAGE][INFO] - HAR: C:\Users\BappY\Katalon Studio\Sample SOAP API Testing Project\Reports\CountryInfoSOAPAPI\20190410_202109\requests\main\0.har
+
+2019-04-10 20:21:22 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-10 20:21:22 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("CountryInfoSOAPService/CountryCurrencyByName")): Send request and verify the response successfully
+
+2019-04-10 20:21:23 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-04-10 20:21:24 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-04-10 20:21:24 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-04-10 20:21:24 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-04-10 20:21:24 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SOAP API Chaining Test" classname="Test Cases/SOAP API Chaining Test" status="PASSED">
+         <system-out><![CDATA[2019-04-10 20:21:24 - [TEST_CASE][PASSED] - Test Cases/SOAP API Chaining Test: Test Cases/SOAP API Chaining Test
+
+2019-04-10 20:21:24 - [TEST_STEP][PASSED] - isoccResponse = sendRequest(findTestObject("CountryInfoSOAPService/CountryListByNames")): Send request successfully
+
+2019-04-10 20:21:26 - [MESSAGE][INFO] - HAR: C:\Users\BappY\Katalon Studio\Sample SOAP API Testing Project\Reports\CountryInfoSOAPAPI\20190410_202109\requests\main\1.har
+
+2019-04-10 20:21:26 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-10 20:21:26 - [TEST_STEP][PASSED] - xmlResponseFromCountry = responseBodyContent: null
+
+2019-04-10 20:21:27 - [TEST_STEP][PASSED] - isoccParsedValue = XmlSlurper().parseText(xmlResponseFromCountry): null
+
+2019-04-10 20:21:27 - [TEST_STEP][PASSED] - codeCountry = sISOCode.text(): null
+
+2019-04-10 20:21:27 - [TEST_STEP][PASSED] - CountryISO = codeCountry: null
+
+2019-04-10 20:21:27 - [TEST_STEP][PASSED] - println("Country Code For Global Variable : " + CountryISO): null
+
+2019-04-10 20:21:27 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("CountryInfoSOAPService/CountryCapitalCityNames")): Send request and verify the response successfully
+
+2019-04-10 20:21:28 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-04-10 20:21:28 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-04-10 20:21:28 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-04-10 20:21:28 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-04-10 20:21:28 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-10 20:21:12 - [TEST_SUITE][PASSED] - CountryInfoSOAPAPI: Test Cases/SOAP API Chaining Test]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CountryInfoSOAPAPI,,collectiion of few SOAP API test from Country information wsdl.,2019-04-10 20:21:12,2019-04-10 20:21:28,16.392s,PASSED
+,,,,,,
+Test Cases/Country Names Test Case,,,2019-04-10 20:21:12,2019-04-10 20:21:24,11.336s,PASSED
+"sendRequest(findTestObject(""CountryInfoSOAPService/CountryListByNames""))",,Send request only gets a resonse from server whether its a success or not.,2019-04-10 20:21:13,2019-04-10 20:21:22,9.050s,PASSED
+"sendRequestAndVerify(findTestObject(""CountryInfoSOAPService/CountryCurrencyByName""))",,Send Request and verify will not only check response form server bubt also cheeck verifaction that we added in verification tab.,2019-04-10 20:21:22,2019-04-10 20:21:24,1.862s,PASSED
+,,,,,,
+Test Cases/SOAP API Chaining Test,,linked API for performing a test case scscenerio.,2019-04-10 20:21:24,2019-04-10 20:21:28,4.503s,PASSED
+"isoccResponse = sendRequest(findTestObject(""CountryInfoSOAPService/CountryListByNames""))",,,2019-04-10 20:21:24,2019-04-10 20:21:26,2.101s,PASSED
+xmlResponseFromCountry = responseBodyContent,,,2019-04-10 20:21:26,2019-04-10 20:21:27,0.502s,PASSED
+isoccParsedValue = XmlSlurper().parseText(xmlResponseFromCountry),,,2019-04-10 20:21:27,2019-04-10 20:21:27,0.072s,PASSED
+codeCountry = sISOCode.text(),,,2019-04-10 20:21:27,2019-04-10 20:21:27,0.013s,PASSED
+CountryISO = codeCountry,,,2019-04-10 20:21:27,2019-04-10 20:21:27,0.000s,PASSED
+"println(""Country Code For Global Variable : "" + CountryISO)",,,2019-04-10 20:21:27,2019-04-10 20:21:27,0.009s,PASSED
+"sendRequestAndVerify(findTestObject(""CountryInfoSOAPService/CountryCapitalCityNames""))",,,2019-04-10 20:21:27,2019-04-10 20:21:28,1.544s,PASSED

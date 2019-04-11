@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Data Driven Soap Test" time="8" tests="1" failures="1" errors="0">
+   <testsuite name="Data Driven Soap Test" tests="1" failures="1" errors="0" time="8" timestamp="2019-04-11 21:08:03" hostname="BappY - Toruk-Macto" id="Test Suites/Data Driven Soap Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\BappY\\Katalon Studio\\Sample SOAP API Testing Project\\Reports\\Data Driven Soap Test\\20190411_210800"/>
+         <property name="logFiles" value="C:\\Users\\BappY\\Katalon Studio\\Sample SOAP API Testing Project\\Reports\\Data Driven Soap Test\\20190411_210800\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="BappY - Toruk-Macto"/>
+         <property name="hostAddress" value="10.244.50.2"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.4.7"/>
+      </properties>
+      <testcase name="Test Cases/Data Driveen Test Case" classname="Test Cases/Data Driveen Test Case" status="PASSED">
+         <system-out><![CDATA[2019-04-11 21:08:03 - [TEST_CASE][PASSED] - Test Cases/Data Driveen Test Case: Test Cases/Data Driveen Test Case
+
+2019-04-11 21:08:04 - [TEST_STEP][PASSED] - println("Country Code :" + countryCode): null
+
+2019-04-11 21:08:04 - [TEST_STEP][PASSED] - println("Country Capital :" + countryCapital): null
+
+2019-04-11 21:08:04 - [TEST_STEP][PASSED] - println("Country Currency :" + countryCurrency): null
+
+2019-04-11 21:08:04 - [TEST_STEP][PASSED] - cptlResponse = sendRequest(findTestObject("SOAP API Country Info/CapitalCity", ["CountryCode":countryCode])): Send request successfully
+
+2019-04-11 21:08:08 - [MESSAGE][INFO] - HAR: C:\Users\BappY\Katalon Studio\Sample SOAP API Testing Project\Reports\Data Driven Soap Test\20190411_210800\requests\main\0.har
+
+2019-04-11 21:08:08 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-11 21:08:08 - [TEST_STEP][PASSED] - verifyElementText(cptlResponse, "CapitalCityResponse.CapitalCityResult", countryCapital): Verify element text successfully
+
+2019-04-11 21:08:08 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-11 21:08:08 - [TEST_STEP][PASSED] - currResponse = sendRequest(findTestObject("SOAP API Country Info/CountryCurrency", ["CountryCode":countryCode])): Send request successfully
+
+2019-04-11 21:08:09 - [MESSAGE][INFO] - HAR: C:\Users\BappY\Katalon Studio\Sample SOAP API Testing Project\Reports\Data Driven Soap Test\20190411_210800\requests\main\1.har
+
+2019-04-11 21:08:09 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-11 21:08:09 - [TEST_STEP][PASSED] - verifyElementText(currResponse, "CountryCurrencyResponse.CountryCurrencyResult.sName", countryCurrency): Verify element text successfully
+
+2019-04-11 21:08:09 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data Driveen Test Case" classname="Test Cases/Data Driveen Test Case" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Data Driveen Test Case FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at Data Driveen Test Case.run(Data Driveen Test Case:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554995280414.run(TempTestSuite1554995280414.groovy:36)
+"/>
+         <system-out><![CDATA[2019-04-11 21:08:09 - [TEST_CASE][FAILED] - Test Cases/Data Driveen Test Case: Test Cases/Data Driveen Test Case FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at Data Driveen Test Case.run(Data Driveen Test Case:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554995280414.run(TempTestSuite1554995280414.groovy:36)
+
+
+2019-04-11 21:08:09 - [TEST_STEP][PASSED] - println("Country Code :" + countryCode): null
+
+2019-04-11 21:08:09 - [TEST_STEP][PASSED] - println("Country Capital :" + countryCapital): null
+
+2019-04-11 21:08:09 - [TEST_STEP][PASSED] - println("Country Currency :" + countryCurrency): null
+
+2019-04-11 21:08:09 - [TEST_STEP][PASSED] - cptlResponse = sendRequest(findTestObject("SOAP API Country Info/CapitalCity", ["CountryCode":countryCode])): Send request successfully
+
+2019-04-11 21:08:11 - [MESSAGE][INFO] - HAR: C:\Users\BappY\Katalon Studio\Sample SOAP API Testing Project\Reports\Data Driven Soap Test\20190411_210800\requests\main\2.har
+
+2019-04-11 21:08:11 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-11 21:08:11 - [TEST_STEP][FAILED] - verifyElementText(cptlResponse, "CapitalCityResponse.CapitalCityResult", countryCapital): verifyElementText(cptlResponse, "CapitalCityResponse.CapitalCityResult", countryCapital) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at Data Driveen Test Case.run(Data Driveen Test Case:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554995280414.run(TempTestSuite1554995280414.groovy:36)
+
+
+2019-04-11 21:08:11 - [MESSAGE][FAILED] - Expected text is 'Wahington' but actual element text is: Washington
+
+2019-04-11 21:08:11 - [MESSAGE][FAILED] - Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+
+2019-04-11 21:08:11 - [MESSAGE][FAILED] - verifyElementText(cptlResponse, "CapitalCityResponse.CapitalCityResult", countryCapital) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at Data Driveen Test Case.run(Data Driveen Test Case:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554995280414.run(TempTestSuite1554995280414.groovy:36)]]></system-out>
+         <system-err><![CDATA[2019-04-11 21:08:09 - [TEST_CASE][FAILED] - Test Cases/Data Driveen Test Case: Test Cases/Data Driveen Test Case FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at Data Driveen Test Case.run(Data Driveen Test Case:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554995280414.run(TempTestSuite1554995280414.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-11 21:08:03 - [TEST_SUITE][FAILED] - Data Driven Soap Test: Test Cases/Data Driveen Test Case FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at Data Driveen Test Case.run(Data Driveen Test Case:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554995280414.run(TempTestSuite1554995280414.groovy:36)]]></system-out>
+      <system-err><![CDATA[2019-04-11 21:08:03 - [TEST_SUITE][FAILED] - Data Driven Soap Test: Test Cases/Data Driveen Test Case FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify element text (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected text is 'Wahington' but actual element text is: Washington)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementText(WSBuiltInKeywords.groovy:154)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at Data Driveen Test Case.run(Data Driveen Test Case:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554995280414.run(TempTestSuite1554995280414.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

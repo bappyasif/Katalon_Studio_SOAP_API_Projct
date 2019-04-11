@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Data Driveen Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>81b3044d-1ec1-4157-bfb9-a4bccc403567</testCaseGuid>
+   <variable>
+      <defaultValue>'BD'</defaultValue>
+      <description></description>
+      <id>7d115b30-79fe-4d00-b3fe-48196507acfa</id>
+      <masked>false</masked>
+      <name>countryCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dhaka'</defaultValue>
+      <description></description>
+      <id>70e449e1-2736-4690-9be4-4e8f9da48569</id>
+      <masked>false</masked>
+      <name>countryCapital</name>
+   </variable>
+   <variable>
+      <defaultValue>'Taka'</defaultValue>
+      <description></description>
+      <id>f131d139-121a-49e2-84e3-551f8b0f33d1</id>
+      <masked>false</masked>
+      <name>countryCurrency</name>
+   </variable>
+</TestCaseEntity>
